@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { Geist_Mono } from 'next/font/google'
-import './globals.css'
+import './styles/globals.css'
 
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
-})
+// const geistMono = Geist_Mono({
+// 	variable: '--font-geist-mono',
+// 	subsets: ['latin'],
+// })
 
 export const metadata: Metadata = {
 	title: 'Cube Online',
@@ -19,7 +18,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${geistMono.variable} antialiased`}>{children}</body>
+			<body>{children}</body>
 		</html>
 	)
 }
+
+// className={`${geistMono.variable} antialiased`}
