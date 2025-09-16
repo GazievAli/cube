@@ -1,0 +1,9 @@
+.cube {
+	position: relative;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	height: 40%;
+	width: 50%;
+	background: #302c2c;
+}
